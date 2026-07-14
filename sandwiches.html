@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Сэндвичи - Кофейня "Керосинка"</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        
+        <!-- PWA -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#2c1810">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="images/icon-192x192.png">
+        
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js');
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header1">
+            <a href="index.html">
+                <img src="logo_coffee.jpg" width="150" border="3" align="left">
+            </a>
+            <h1 align="center">Кофейня "Керосинка"</h1>
+            <div class="feedback-top-link">
+                <a href="feedback.php" class="feedback-link">📩 Обратная связь</a>
+            </div>
+        </div>
+
+        <section>
+            <nav>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="coffee.html">Кофе</a></li>
+                <li><a href="sandwiches.html">Сэндвичи</a></li>
+                <li><a href="lemonade.html">Лимонады</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </nav>
+
+            <h2>Наши сэндвичи</h2>
+
+            <div class="menu-section">
+                <h3>🥪 Сэндвичи и роллы</h3>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/ceasar_roll.jpg" alt="Сэндвич Ролл Цезарь">
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-name">Сэндвич Ролл "Цезарь"</span>
+                        <span class="menu-price">390 ₽</span>
+                        <div class="menu-desc">Курица, салат айсберг, пармезан, соус цезарь</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/tuna_roll.jpg" alt="Сэндвич Ролл с тунцом">
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-name">Сэндвич Ролл с тунцом</span>
+                        <span class="menu-price">420 ₽</span>
+                        <div class="menu-desc">Тунец, огурец, салат, соус тартар</div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/chicken_pita.jpg" alt="Пита с цыплёнком">
+                    </div>
+                    <div class="menu-info">
+                        <span class="menu-name">Пита с цыплёнком</span>
+                        <span class="menu-price">350 ₽</span>
+                        <div class="menu-desc">Цыплёнок, томаты, листья салата, соус чесночный</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            Наш адрес
+            119991, Москва, Ленинский пр-т., д.65
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>Контакты - Кофейня "Керосинка"</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        
+        <!-- PWA -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#2c1810">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="apple-touch-icon" href="images/icon-192x192.png">
+        
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js');
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header1">
+            <a href="index.html">
+                <img src="logo_coffee.jpg" width="150" border="3" align="left">
+            </a>
+            <h1 align="center">Кофейня "Керосинка"</h1>
+            <div class="feedback-top-link">
+                <a href="feedback.php" class="feedback-link">📩 Обратная связь</a>
+            </div>
+        </div>
+
+        <section>
+            <nav>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="coffee.html">Кофе</a></li>
+                <li><a href="sandwiches.html">Сэндвичи</a></li>
+                <li><a href="lemonade.html">Лимонады</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </nav>
+
+            <h2>Наши контакты</h2>
+
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <span class="contact-label">Адрес:</span>
+                <span class="contact-value">Москва, Ленинский пр-т., д.65</span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <span class="contact-label">Телефон:</span>
+                <span class="contact-value"><a href="tel:+74951234567">+7 (495) 123-45-67</a></span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <span class="contact-label">Email:</span>
+                <span class="contact-value"><a href="mailto:info@kerosinka.ru">info@kerosinka.ru</a></span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">🕐</span>
+                <span class="contact-label">Время работы:</span>
+                <span class="contact-value">Ежедневно с 08:00 до 22:00</span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">🌐</span>
+                <span class="contact-label">Сайт:</span>
+                <span class="contact-value"><a href="https://kerosinka.ru" target="_blank">kerosinka.ru</a></span>
+            </div>
+
+            <div class="contact-item">
+                <span class="contact-icon">📨</span>
+                <span class="contact-label">Telegram:</span>
+                <span class="contact-value"><a href="https://t.me/kerosinka_gubkin" target="_blank">@kerosinka_gubkin</a></span>
+            </div>
+        </section>
+
+        <footer>
+            Наш адрес
+            119991, Москва, Ленинский пр-т., д.65
+        </footer>
+    </body>
+</html>
